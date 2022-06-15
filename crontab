@@ -1,2 +1,0 @@
-0 */4 * * * rclone sync "Mega Encrypt:Main" /home/doodles/Documents/Main && rclon>
-
