@@ -9,6 +9,7 @@ DoodlesEpic/Scripts is a guide and a collection of scripts with stuff I like to 
 - Put .zshrc on .config/zsh/
 - Set up zsh shell and oh-my-zsh
 - Download oh-my-zsh plugins listed in the .zshrc file
+- Use chsh to set zsh as the default shell for the user
 - Set up brave browser
 - Configure Bitwarden with strict configs
 - Download the xdg-ninja script
