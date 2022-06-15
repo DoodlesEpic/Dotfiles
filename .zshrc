@@ -77,7 +77,6 @@ export BUNDLE_USER_CACHE="$XDG_CACHE_HOME"/bundle
 export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME"/bundle
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export ANDROID_HOME="$XDG_DATA_HOME"/android
-export ZDOTDIR=$HOME/.config/zsh
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 
