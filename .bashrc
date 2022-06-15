@@ -12,9 +12,6 @@ then
 fi
 export PATH
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
 	for rc in ~/.bashrc.d/*; do
@@ -30,6 +27,7 @@ unset rc
 # The next line updates PATH for Netlify's Git Credential Helper.
 test -f '/home/doodles/.config/netlify/helper/path.bash.inc' && source '/home/doodles/.config/netlify/helper/path.bash.inc'
 
+# Environment variables for XDG
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_STATE_HOME=$HOME/.local/state
