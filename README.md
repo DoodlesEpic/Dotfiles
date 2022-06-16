@@ -1,6 +1,10 @@
 # Scripts
 
 DoodlesEpic/Scripts is a guide and a collection of scripts with stuff I like to do on my systems to have them easy to use, fast, secure, and most of all: consistent.
+By running these scripts, you will get a system with zsh and oh-my-zsh with very useful plugins and sane defaults.
+You will also have a lot of environment variables that will make sure you home folder (mostly) follows the XDG specification.
+And even better: all of your environment variables will be on POSIX-compliant .profile, which means it gets to be sourced by bash and zsh without duplicating the environment variables.
+At
 
 ## Setting up a new machine with Fedora
 
