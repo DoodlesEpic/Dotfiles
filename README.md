@@ -29,3 +29,5 @@ These are all the things I want to eventually do but didn't have the time for ye
 - Have XDG environment variables for all programs
 - Have a one-liner script that does it all, or almost all
 - Fix the mess from the installation of rust cargo, nvm, and other curl | sh installed applications (almost done)
+- systemd-resolved DNS setup for adblocking and better privacy using NextDNS, or similar
+- /etc/hosts/ setup for adblocking and better privacy (if I find a blocklist that works 99.99% of the time)
