@@ -1,6 +1,3 @@
-. "$HOME/.local/share/cargo/env"
-. "$XDG_DATA_HOME/cargo/env"
-
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
@@ -14,7 +11,11 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.cache
 
-# Environment variables for applications that don't use XDG by default
+# Source cargo environment
+. "$HOME/.local/share/cargo/env"
+. "$XDG_DATA_HOME/cargo/env"
+
+# More environment variables for applications that don't use XDG by default
 export HISTFILE="${XDG_STATE_HOME}"/bash/history
 export CABAL_CONFIG="$XDG_CONFIG_HOME"/cabal/config
 export CABAL_DIR="$XDG_DATA_HOME"/cabal
@@ -30,6 +31,7 @@ export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export ANDROID_HOME="$XDG_DATA_HOME"/android
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
+export ZDOTDIR=$HOME/.config/zsh
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
