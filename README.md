@@ -15,3 +15,8 @@ DoodlesEpic/Scripts is a guide and a collection of scripts with stuff I like to 
 - Download the xdg-ninja script
 - Set up sync with mega-sync
 
+## TODO
+These are all the things I want to eventually do but didn't have the time for yet or may be really hard
+- Have XDG environment variables for all programs
+- Use .profile and remove duplication of .bashrc and .zshrc
+- Fix the mess from the installation of rust cargo and other curl | sh installed applications
