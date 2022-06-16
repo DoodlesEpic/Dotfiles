@@ -1,4 +1,12 @@
 . "$HOME/.local/share/cargo/env"
+. "$XDG_DATA_HOME/cargo/env"
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
 
 # Environment variables for XDG
 export XDG_DATA_HOME=$HOME/.local/share
@@ -6,6 +14,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.cache
 
+# Environment variables for applications that don't use XDG by default
 export HISTFILE="${XDG_STATE_HOME}"/bash/history
 export CABAL_CONFIG="$XDG_CONFIG_HOME"/cabal/config
 export CABAL_DIR="$XDG_DATA_HOME"/cabal
