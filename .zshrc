@@ -1,3 +1,7 @@
+# Source the .profile file on startup
+# It should be run with sh compatibillity mode as it will also be run by bash and sh
+[[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 

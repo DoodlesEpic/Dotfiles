@@ -5,6 +5,10 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Force bash to source .profile
+# This guarantees that it can share stuff with zhs and also have its own profile
+source ~/.profile
+
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
 	for rc in ~/.bashrc.d/*; do
