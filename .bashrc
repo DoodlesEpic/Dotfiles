@@ -27,3 +27,6 @@ test -f '/home/doodles/.config/netlify/helper/path.bash.inc' && source '/home/do
 # This loads nvm bash_completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
 
+# Store the history file according to xdg 
+export HISTFILE="${XDG_STATE_HOME}"/bash/history
+

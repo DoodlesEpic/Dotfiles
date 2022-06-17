@@ -66,3 +66,6 @@ bindkey '^[[B' history-substring-search-down
 # Fix background theme issues
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
 
+# Save the history file according to xdg 
+export HISTFILE="$XDG_STATE_HOME"/zsh/history
+
