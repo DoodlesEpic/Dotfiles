@@ -15,6 +15,10 @@ export XDG_CACHE_HOME=$HOME/.cache
 . "$HOME/.local/share/cargo/env"
 . "$XDG_DATA_HOME/cargo/env"
 
+# Alias for wget since there's no env var for it to use xdg
+alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+alias vim=vim -i ~/.cache/vim/info
+
 # More environment variables for applications that don't use XDG by default
 export HISTFILE="${XDG_STATE_HOME}"/bash/history
 export CABAL_CONFIG="$XDG_CONFIG_HOME"/cabal/config
