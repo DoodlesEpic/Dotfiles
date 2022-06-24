@@ -20,7 +20,6 @@ And even better: all of your environment variables will be on POSIX-compliant .p
 - Put .zshrc on the home folder
 - Set up zsh shell and oh-my-zsh
 - Download the oh-my-zsh plugins listed in the .zshrc file
-- Use chsh to set zsh as the default shell for the user
 - Set up Brave browser
 - Configure Bitwarden with strict configs
 - Download the xdg-ninja script
