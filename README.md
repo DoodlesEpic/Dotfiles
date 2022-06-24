@@ -28,6 +28,22 @@ And even better: all of your environment variables will be on POSIX-compliant .p
 - Grab gnome-shell-extension-dash-to-dock through dnf
 - Grab gnome-shell-extension-appindicator through dnf
 
+### Installing oh-my-zsh plugins
+
+I really like the fish shell, but I don't use it because it is not able to run POSIX scripts, it's also just very stupid because it could be able to run posix-compliant scripts if they wanted, that's why we have zsh. A few zsh-users plugins must be installed to have autosuggestions, substring search and syntax highlighting like in fish.
+
+```zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+```zsh
+git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
+```
+
+```zsh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
 ## TODO
 
 These are all the things I want to eventually do but didn't have the time for yet or may be hard
