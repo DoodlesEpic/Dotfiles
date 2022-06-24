@@ -25,6 +25,8 @@ And even better: all of your environment variables will be on POSIX-compliant .p
 - Configure Bitwarden with strict configs
 - Download the xdg-ninja script
 - Set up sync with mega-sync
+- Grab gnome-shell-extension-dash-to-dock through dnf
+- Grab gnome-shell-extension-appindicator through dnf
 
 ## TODO
 
