@@ -15,9 +15,10 @@ export XDG_CACHE_HOME=$HOME/.cache
 . "$HOME/.local/share/cargo/env"
 . "$XDG_DATA_HOME/cargo/env"
 
-# Alias for wget since there's no env var for it to use xdg
+# Alias for wget, vim and yarn since there's no env var for these to use xdg
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 alias vim=vim -i ~/.cache/vim/info
+alias yarn=yarn --use-yarnrc $XDG_CONFIG_HOME/yarn/config
 
 # More environment variables for applications that don't use XDG by default
 export CABAL_CONFIG="$XDG_CONFIG_HOME"/cabal/config
