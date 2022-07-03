@@ -19,7 +19,6 @@ if [ -d ~/.bashrc.d ]; then
 fi
 
 unset rc
-. "$XDG_DATA_HOME/cargo/env"
 
 # This loads nvm bash_completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
