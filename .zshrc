@@ -69,10 +69,5 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
 # Save the history file according to xdg 
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
 
-
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # The next line updates PATH for Netlify's Git Credential Helper.
 test -f '/home/doodles/.config/netlify/helper/path.zsh.inc' && source '/home/doodles/.config/netlify/helper/path.zsh.inc'
