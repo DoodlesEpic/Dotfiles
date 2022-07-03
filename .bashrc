@@ -21,9 +21,6 @@ fi
 unset rc
 . "$XDG_DATA_HOME/cargo/env"
 
-# The next line updates PATH for Netlify's Git Credential Helper.
-test -f '/home/doodles/.config/netlify/helper/path.bash.inc' && source '/home/doodles/.config/netlify/helper/path.bash.inc'
-
 # This loads nvm bash_completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
 
