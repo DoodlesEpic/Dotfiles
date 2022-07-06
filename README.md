@@ -15,6 +15,9 @@ And even better: all of your environment variables will be on POSIX-compliant .p
 - Install Fedora using Fedora Media Writer
 - Enable LUKS on installation, use a passphrase
 - Update packages
+```bash
+sudo dnf update -y # reboot if you are not on the latest kernel
+```
 - Add the (RPM fusion free and non-free repos)[https://rpmfusion.org/Configuration/] 
 ```bash
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
