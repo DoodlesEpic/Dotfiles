@@ -15,6 +15,30 @@ And even better: all of your environment variables will be on POSIX-compliant .p
 - Install Fedora using Fedora Media Writer
 - Enable LUKS on installation, use a passphrase
 - Update packages
+- Add the (RPM fusion free and non-free repos)[https://rpmfusion.org/Configuration/] 
+```bash
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+```
+```bash
+sudo dnf groupupdate core
+```
+- Install RPM fusion multimedia stuff 
+```bash
+sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+```
+```bash
+sudo dnf groupupdate sound-and-video
+```
+- Add the (NVIDIA VGA drivers from RPM fusion)[https://rpmfusion.org/Howto/NVIDIA] before adding any GUIs
+```bash
+sudo dnf update -y # and reboot if you are not on the latest kernel
+```
+```bash
+sudo dnf install akmod-nvidia # rhel/centos users can use kmod-nvidia instead
+```
+```bash
+sudo dnf install xorg-x11-drv-nvidia-cuda #optional for cuda/nvdec/nvenc support
+```
 - Put .profile on the home folder
 - Put .bashrc on the home folder
 - Put .zshrc on the home folder
