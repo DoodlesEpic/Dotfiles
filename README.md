@@ -78,6 +78,9 @@ sudo dnf install megasync-Fedora_30.x86_64.rpm
 ```bash
 rm megasync-Fedora_30.x86_64.rpm -f
 ```
+
+### Making GNOME usable
+
 - Grab gnome-shell-extension-dash-to-dock through dnf
 ```bash
 sudo dnf install gnome-shell-extension-dash-to-dock.noarch
@@ -86,6 +89,19 @@ sudo dnf install gnome-shell-extension-dash-to-dock.noarch
 ```bash
 sudo dnf install gnome-shell-extension-appindicator.noarch
 ```
+
+#### GNOME extensions
+
+- Grab both the GNOME extensions and GNOME tweaks through GNOME software
+- Open GNOME extensions and use it to enable both app indicator and dash to dock
+- Make sure to use magic autohide and system theme on dash to dock so that it doesn't look awful
+
+#### GNOME tweaks
+
+- Use GNOME tweaks to set the mouse acceleration profile to flat.
+- Use GNOME tweaks to add megasync to startup applications
+- Use GNOME tweaks to center new windows
+- Optionally also set mouse right click to maximize windows horizontally (doesn't work with everything well)
 
 #### Extra
 
