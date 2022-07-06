@@ -26,6 +26,9 @@ And even better: all of your environment variables will be on POSIX-compliant .p
 - Set up sync with mega-sync
 - Grab gnome-shell-extension-dash-to-dock through dnf
 - Grab gnome-shell-extension-appindicator through dnf
+- Limit Linux kernel installations to 2 to reduce space usage:
+`sudoedit /etc/dnf/dnf.conf`
+`installonly_limit=2`
 
 ### Installing oh-my-zsh plugins
 
