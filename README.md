@@ -67,7 +67,7 @@ sudo dnf install xorg-x11-drv-nvidia-cuda #optional for cuda/nvdec/nvenc support
 
 - Set up Brave browser
 - Configure Bitwarden with strict configs
-- Download the xdg-ninja script
+- Download the [xdg-ninja script](https://github.com/b3nj5m1n/xdg-ninja)
 - Set up sync with mega-sync
 - Grab gnome-shell-extension-dash-to-dock through dnf
 - Grab gnome-shell-extension-appindicator through dnf
