@@ -23,7 +23,7 @@ sudo dnf update -y # reboot if you are not on the latest kernel
 
 ### Software repositories
 
-- Add the (RPM fusion free and non-free repos)[https://rpmfusion.org/Configuration/] 
+- Add the [RPM fusion free and non-free repos](https://rpmfusion.org/Configuration/)
 ```bash
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
@@ -41,7 +41,7 @@ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=Pack
 sudo dnf groupupdate sound-and-video
 ```
 
-- Add the (NVIDIA VGA drivers from RPM fusion)[https://rpmfusion.org/Howto/NVIDIA] before adding any GUIs
+- Add the [NVIDIA VGA drivers from RPM fusion](https://rpmfusion.org/Howto/NVIDIA) before adding any GUIs
 ```bash
 sudo dnf update -y # and reboot if you are not on the latest kernel
 ```
