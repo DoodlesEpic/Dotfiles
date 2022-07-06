@@ -12,12 +12,17 @@ And even better: all of your environment variables will be on POSIX-compliant .p
 
 ## Setting up a new machine with Fedora
 
+### Initial installation
+
 - Install Fedora using Fedora Media Writer
 - Enable LUKS on installation, use a passphrase
 - Update packages
 ```bash
 sudo dnf update -y # reboot if you are not on the latest kernel
 ```
+
+### Software repositories
+
 - Add the (RPM fusion free and non-free repos)[https://rpmfusion.org/Configuration/] 
 ```bash
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -25,6 +30,9 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 ```bash
 sudo dnf groupupdate core
 ```
+
+### Set up drivers multimedia
+
 - Install RPM fusion multimedia stuff 
 ```bash
 sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
@@ -32,6 +40,7 @@ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=Pack
 ```bash
 sudo dnf groupupdate sound-and-video
 ```
+
 - Add the (NVIDIA VGA drivers from RPM fusion)[https://rpmfusion.org/Howto/NVIDIA] before adding any GUIs
 ```bash
 sudo dnf update -y # and reboot if you are not on the latest kernel
@@ -42,11 +51,20 @@ sudo dnf install akmod-nvidia # rhel/centos users can use kmod-nvidia instead
 ```bash
 sudo dnf install xorg-x11-drv-nvidia-cuda #optional for cuda/nvdec/nvenc support
 ```
+
+### Adding dotfiles
+
 - Put .profile on the home folder
 - Put .bashrc on the home folder
 - Put .zshrc on the home folder
+
+### Setting up zsh
+
 - Set up zsh shell and oh-my-zsh
 - Download the oh-my-zsh plugins listed in the .zshrc file
+
+### Setting up other applications
+
 - Set up Brave browser
 - Configure Bitwarden with strict configs
 - Download the xdg-ninja script
