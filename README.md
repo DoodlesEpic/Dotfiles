@@ -69,6 +69,15 @@ sudo dnf install xorg-x11-drv-nvidia-cuda #optional for cuda/nvdec/nvenc support
 - Configure Bitwarden with strict configs
 - Download the [xdg-ninja script](https://github.com/b3nj5m1n/xdg-ninja)
 - Set up sync with mega-sync
+```bash
+wget https://mega.nz/linux/repo/Fedora_30/x86_64/megasync-Fedora_30.x86_64.rpm
+```
+```bash
+sudo dnf install megasync-Fedora_30.x86_64.rpm
+```
+```bash
+rm megasync-Fedora_30.x86_64.rpm -f
+```
 - Grab gnome-shell-extension-dash-to-dock through dnf
 - Grab gnome-shell-extension-appindicator through dnf
 - Limit Linux kernel installations to 2 to reduce space usage:
