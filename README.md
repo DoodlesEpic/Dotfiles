@@ -79,7 +79,16 @@ sudo dnf install megasync-Fedora_30.x86_64.rpm
 rm megasync-Fedora_30.x86_64.rpm -f
 ```
 - Grab gnome-shell-extension-dash-to-dock through dnf
+```bash
+sudo dnf install gnome-shell-extension-dash-to-dock.noarch
+```
 - Grab gnome-shell-extension-appindicator through dnf
+```bash
+sudo dnf install gnome-shell-extension-appindicator.noarch
+```
+
+#### Extra
+
 - Limit Linux kernel installations to 2 to reduce space usage:
 `sudoedit /etc/dnf/dnf.conf`
 `installonly_limit=2`
