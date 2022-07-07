@@ -1,14 +1,14 @@
 # Scripts
 
-DoodlesEpic/Scripts is a guide and a collection of scripts with stuff I like to do on my systems to have them easy to use, fast, secure, and most of all: consistent.
+This repoository is a guide and a collection of scripts with stuff I like to do on my systems to have them easy to use, fast, secure, and most of all: consistent. It also of course includes my dotfiles as the names suggests. You might be interested in this if you like Fedora, Wayland, Freedesktop and Zsh.
 
 ## What this is
 
 By running these scripts, you will get a system with zsh and oh-my-zsh with very useful plugins and sane defaults.
-
 You will also have a lot of environment variables that will make sure your home folder (mostly) follows the XDG specification.
+Also a few environment variables that will make so applications prefer using wayland over xwayland (this includes Qt, GTK and Java applications and Firefox).
 
-And even better: all of your environment variables will be on POSIX-compliant .profile, which means it gets to be sourced by bash and zsh without duplicating the environment variables.
+And to top it off: all of your shell environment variables will be on POSIX-compliant .profile, which means it gets to be sourced by bash and zsh without duplicating the environment variables. Other environment variables are stored using Freedesktop's [environment.d](https://www.freedesktop.org/software/systemd/man/environment.d.html).
 
 ## Setting up a new machine with Fedora
 
