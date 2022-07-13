@@ -10,7 +10,7 @@ By running these scripts, you will get a system with zsh and oh-my-zsh with very
 You will also have a lot of environment variables that will make sure your home folder (mostly) follows the XDG specification.
 Also a few environment variables that will make so applications prefer using wayland over xwayland (this includes Qt, GTK and Java applications and Firefox).
 
-And to top it off: all of your shell environment variables will be on POSIX-compliant .profile, which means it gets to be sourced by bash and zsh without duplicating the environment variables. Other environment variables are stored using Freedesktop's [environment.d](https://www.freedesktop.org/software/systemd/man/environment.d.html).
+And to top it off: all of your shell environment variables will be on POSIX-compliant .profile, which means it gets to be sourced by bash and zsh without duplicating the environment variables. Other environment variables are stored using Freedesktop's [environment.d](https://www.freedesktop.org/software/systemd/man/environment.d.html) so that they [are loaded by the desktop environment](https://wiki.archlinux.org/title/environment_variables#Wayland_environment).
 
 ## Setting up a new machine with Fedora
 
