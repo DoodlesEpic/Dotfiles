@@ -72,13 +72,13 @@ sudo dnf install xorg-x11-drv-nvidia-cuda #optional for cuda/nvdec/nvenc support
 - Download the [xdg-ninja script](https://github.com/b3nj5m1n/xdg-ninja)
 - Set up sync with mega-sync
 ```bash
-wget https://mega.nz/linux/repo/Fedora_30/x86_64/megasync-Fedora_30.x86_64.rpm
+wget https://mega.nz/linux/repo/Fedora_36/x86_64/megasync-Fedora_36.x86_64.rpm
 ```
 ```bash
-sudo dnf install megasync-Fedora_30.x86_64.rpm
+sudo dnf install megasync-Fedora_36.x86_64.rpm
 ```
 ```bash
-rm megasync-Fedora_30.x86_64.rpm -f
+rm megasync-Fedora_36.x86_64.rpm -f
 ```
 
 ### Making GNOME usable
