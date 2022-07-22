@@ -16,9 +16,10 @@ export XDG_CACHE_HOME=$HOME/.cache
 . "$XDG_DATA_HOME/cargo/env"
 
 # Alias for wget, vim and yarn since there's no env var for these to use xdg
-alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
-alias vim=vim -i ~/.cache/vim/info
-alias yarn=yarn --use-yarnrc $XDG_CONFIG_HOME/yarn/config
+alias wget="wget --hsts-file='$XDG_DATA_HOME/wget-hsts'"
+alias vim="vim -i ~/.cache/vim/info"
+alias yarn="yarn --use-yarnrc $XDG_CONFIG_HOME/yarn/config"
+alias nvidia-settings="nvidia-settings --config='$XDG_CONFIG_HOME'/nvidia/settings" 
 
 # More environment variables for applications that don't use XDG by default
 export CABAL_CONFIG="$XDG_CONFIG_HOME"/cabal/config
