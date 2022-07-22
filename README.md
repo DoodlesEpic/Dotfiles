@@ -63,6 +63,10 @@ sudo dnf install xorg-x11-drv-nvidia-cuda #optional for cuda/nvdec/nvenc support
 ### Setting up zsh
 
 - Set up zsh shell and oh-my-zsh
+- Make sure to put oh-my-zsh config on the .config folder
+```bash
+ZSH="~/.config/zsh/oh-my-zsh" sh installer.sh
+```
 - Download the oh-my-zsh plugins listed in the .zshrc file
 
 ### Setting up other applications
