@@ -72,6 +72,18 @@ ZSH="~/.config/zsh/oh-my-zsh" sh installer.sh
 ### Setting up other applications
 
 - Set up Brave browser
+```bash
+sudo dnf install dnf-plugins-core
+```
+```bash
+sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+```
+```bash
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+```
+```bash
+sudo dnf install brave-browser
+```
 - Configure Bitwarden with strict configs
 - Download the [xdg-ninja script](https://github.com/b3nj5m1n/xdg-ninja)
 - Set up sync with mega-sync
