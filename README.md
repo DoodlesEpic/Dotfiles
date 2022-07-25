@@ -67,12 +67,27 @@ sudo dnf install xorg-x11-drv-nvidia-cuda #optional for cuda/nvdec/nvenc support
 
 ### Setting up zsh
 
-- Set up zsh shell and oh-my-zsh
-- Make sure to put oh-my-zsh config on the .config folder
+- Set up zsh shell
 ```bash
-ZSH="~/.config/zsh/oh-my-zsh" sh installer.sh
+sudo dnf install zsh
+```
+```bash
+chsh -s $(which zsh)
+```
+- Set up oh-my-zsh framework
+```bash
+ZSH="~/.config/zsh/oh-my-zsh" sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 - Download the oh-my-zsh plugins listed in the .zshrc file
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-autosuggestions 
+```
+```bash
+git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-history-substring-search
+```
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
 
 ### Setting up other applications
 
@@ -126,27 +141,12 @@ sudo dnf install gnome-shell-extension-appindicator.noarch
 - Use GNOME tweaks to center new windows
 - Optionally also set mouse right click to maximize windows horizontally (doesn't work with everything well)
 
-#### Extra
+### Extra
 
 - Limit Linux kernel installations to 2 to reduce space usage:
 `sudoedit /etc/dnf/dnf.conf`
 `installonly_limit=2`
 
-### Installing oh-my-zsh plugins
-
-I really like the fish shell, but I don't use it because it is not able to run POSIX scripts, it's also just very stupid because it could be able to run posix-compliant scripts if they wanted, that's why we have zsh. A few zsh-users plugins must be installed to have autosuggestions, substring search and syntax highlighting like in fish.
-
-```zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-autosuggestions 
-```
-
-```zsh
-git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-history-substring-search
-```
-
-```zsh
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
 
 ## TODO
 
