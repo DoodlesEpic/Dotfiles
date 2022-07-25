@@ -33,6 +33,11 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 sudo dnf groupupdate core
 ```
 
+- Add the [Flathub Fedora Selection repository](https://flatpak.org/setup/Fedora)
+```bash
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
 ### Set up drivers multimedia
 
 - Install RPM fusion multimedia stuff 
