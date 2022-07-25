@@ -1,6 +1,6 @@
 # Scripts
 
-This repoository is a guide and a collection of scripts with stuff I like to do on my systems to have them easy to use, fast, secure, and most of all: consistent. It also of course includes my dotfiles as the names suggests. You might be interested in this if you like Fedora, Wayland, Freedesktop and Zsh.
+This repository is a guide and a collection of scripts with stuff I like to do on my systems to have them easy to use, fast, secure, and most of all: consistent. It also of course includes my dotfiles as the names suggests. You might be interested in this if you like Fedora, Wayland, Freedesktop and Zsh.
 
 ![My system's neofetch](https://user-images.githubusercontent.com/37254797/177683255-17c8092a-518a-46ef-bf67-4fb5a4cc15db.png)
 
