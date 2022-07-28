@@ -89,6 +89,18 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
+#### Create the history file
+
+By default since we change where we store the history file we have to actually create the directory, and for good measure the file, otherwise every time we start zsh the history will be empty.
+
+```bash
+mkdir $XDG_STATE_HOME/zsh
+```
+```bash
+touch $XDG_STATE_HOME/zsh/history
+```
+
+
 ### Setting up other applications
 
 - Set up Brave browser
