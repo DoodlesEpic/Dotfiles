@@ -1,6 +1,6 @@
 # Scripts
 
-This repository is a guide and a collection of scripts with stuff I like to do on my systems to have them easy to use, fast, secure, and most of all: consistent. It also of course includes my dotfiles as the names suggests. You might be interested in this if you like Fedora, Wayland, Freedesktop and Zsh.
+This repository is a guide and a collection of scripts with stuff I like to do on my systems to have them easy to use, fast, secure, and most of all: consistent. It also of course includes my dot files, as the names suggests. You might be interested in this if you like Fedora, Wayland, Freedesktop and zsh.
 
 ![My system's neofetch](https://user-images.githubusercontent.com/37254797/177683255-17c8092a-518a-46ef-bf67-4fb5a4cc15db.png)
 ![Screenshot](https://user-images.githubusercontent.com/37254797/181867608-4cac8ba0-bff9-4ceb-8022-ffd5454847d2.png)
@@ -9,7 +9,7 @@ This repository is a guide and a collection of scripts with stuff I like to do o
 
 By running these scripts, you will get a system with zsh and oh-my-zsh with very useful plugins and sane defaults.
 You will also have a lot of environment variables that will make sure your home folder (mostly) follows the XDG specification.
-Also a few environment variables that will make so applications prefer using wayland over xwayland (this includes Qt, GTK and Java applications and Firefox).
+Also, a few environment variables that will make, so applications prefer using Wayland over XWayland (this includes Qt, GTK and Java applications and Firefox).
 
 And to top it off: all of your shell environment variables will be on POSIX-compliant .profile, which means it gets to be sourced by bash and zsh without duplicating the environment variables. Other environment variables are stored using Freedesktop's [environment.d](https://www.freedesktop.org/software/systemd/man/environment.d.html) so that they [are loaded by the desktop environment](https://wiki.archlinux.org/title/environment_variables#Wayland_environment).
 
@@ -60,7 +60,7 @@ sudo dnf install akmod-nvidia # rhel/centos users can use kmod-nvidia instead
 sudo dnf install xorg-x11-drv-nvidia-cuda #optional for cuda/nvdec/nvenc support
 ```
 
-### Adding dotfiles
+### Adding dot files
 
 - Put .profile on the home folder
 - Put .bashrc on the home folder
@@ -92,7 +92,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 #### Create the history file
 
-By default since we change where we store the history file we have to actually create the directory, and for good measure the file, otherwise every time we start zsh the history will be empty.
+By default, since we change where we store the history file we have to actually create the directory, and for good measure the file, otherwise every time we start zsh the history will be empty.
 
 ```bash
 mkdir $XDG_STATE_HOME/zsh
@@ -161,12 +161,12 @@ sudo dnf install gnome-shell-extension-appindicator.noarch
 `installonly_limit=2`
 
 
-## TODO
+## To-do
 
 These are all the things I want to eventually do but didn't have the time for yet or may be hard
 
 - Have XDG environment variables for all programs
 - Have a one-liner script that does it all, or almost all
-- Fix the mess from the installation of rust cargo, nvm, and other curl | sh installed applications (almost done)
-- systemd-resolved DNS setup for adblocking and better privacy using NextDNS, or similar
-- /etc/hosts/ setup for adblocking and better privacy (if I find a blocklist that works 99.99% of the time)
+- Fix the mess from the installation of rust cargo, NVM, and other curl | sh installed applications (almost done)
+- systemd-resolved DNS setup for ad blocking and better privacy using NextDNS, or similar
+- /etc/hosts/ setup for ad blocking and better privacy (if I find a block list that works 99.99% of the time)
