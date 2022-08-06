@@ -180,8 +180,10 @@ sudo dnf install gnome-shell-extension-pop-shell
 
 These are all the things I want to eventually do but didn't have the time for yet or may be hard
 
-- Have XDG environment variables for all programs
+- Have XDG environment variables for all programs commonly used
+  - Fix the mess from the installation of rust cargo, NVM, and other curl | sh installed applications (almost done)
 - Have a one-liner script that does it all, or almost all
-- Fix the mess from the installation of rust cargo, NVM, and other curl | sh installed applications (almost done)
+  - Have a graphical user interface that allows the system setup fast and easy, similar to [Chris Titus's script for Windows](https://github.com/ChrisTitusTech/win10script)
 - systemd-resolved DNS setup for ad blocking and better privacy using NextDNS, or similar
-- /etc/hosts/ setup for ad blocking and better privacy (if I find a block list that works 99.99% of the time)
+  - /etc/hosts/ setup for ad blocking and better privacy (if I find a block list that works 99.99% of the time)
+- Guide for setting up the [libadwaita for GTK theme](https://github.com/lassekongo83/adw-gtk3) to improve system cohesion
