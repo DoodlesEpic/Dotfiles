@@ -154,6 +154,11 @@ sudo dnf install gnome-shell-extension-appindicator.noarch
 - Use GNOME tweaks to center new windows
 - Optionally also set mouse right click to maximize windows horizontally (doesn't work with everything well)
 
+#### The other extensions software
+
+- Use it to grab blur-my-shell
+- Set up blur-my-shell to stop conflicting with dash to dock
+
 ### Extra
 
 - Limit Linux kernel installations to 2 to reduce space usage:
