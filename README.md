@@ -159,6 +159,16 @@ sudo dnf install gnome-shell-extension-appindicator.noarch
 - Use it to grab blur-my-shell
 - Set up blur-my-shell to stop conflicting with dash to dock
 
+#### Pop shell tilling
+
+- The Pop! shell is pretty good if you want to keep the look and feel of your GNOME desktop but also have the abillity to tile windows. To grab it do this:
+```bash
+sudo dnf install gnome-shell-extension-pop-shell
+```
+- Enable it in GNOME extensions and tweak to your liking
+- Click in the app indicator in the top right and enable tilling
+- Set windows spacing to 2 and disable the focus highlight
+
 ### Extra
 
 - Limit Linux kernel installations to 2 to reduce space usage:
