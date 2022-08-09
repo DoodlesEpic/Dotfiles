@@ -171,10 +171,19 @@ sudo dnf install gnome-shell-extension-pop-shell
 
 ### Extra
 
+#### Space usage
+
 - Limit Linux kernel installations to 2 to reduce space usage:
 `sudoedit /etc/dnf/dnf.conf`
 `installonly_limit=2`
 
+#### Icon theme
+
+- I have really like the Numix Icons Circle theme recently and have been using it as a substitute to the Adwaita icon theme because I believe it's more consistent. The reason I choose it over Talo is because it's available through the repos
+```bash
+sudo dnf install numix-icon-theme
+```
+- Enable it through GNOME tweaks
 
 ## To-do
 
