@@ -38,7 +38,6 @@ export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 
 # Set up rc files
 export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
-export VIMINIT="set nocp | source ${XDG_CONFIG_HOME:-$HOME/.config}/vim/vimrc"
 
 # Node version manager needs to be loaded here
 export NVM_DIR="$HOME/.config/nvm"
