@@ -35,7 +35,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting cabal colored-man-pages dnf git-auto-fetch heroku node npm nvm pip pipenv poetry python rsync rust safe-paste systemadmin systemd vscode yum)
+plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting cabal colored-man-pages dnf git-auto-fetch heroku node npm nvm pip pipenv poetry python rsync rust safe-paste systemadmin systemd vscode yum fzf)
 
 # Additional completion definitions for Zsh
 # Adding it as a regular Oh My ZSH! plugin will not work properly
