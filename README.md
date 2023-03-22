@@ -89,6 +89,10 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 ```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
+- Download [fzf](https://github.com/junegunn/fzf) for better history reverse search
+```bash
+sudo dnf install fzf
+```
 
 #### Create the history file
 
