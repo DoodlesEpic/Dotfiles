@@ -34,6 +34,7 @@ export ANDROID_HOME="$XDG_DATA_HOME"/android
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export ZDOTDIR=$HOME/.config/zsh
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 
 # Set up rc files
 export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
