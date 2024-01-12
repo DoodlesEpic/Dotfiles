@@ -77,3 +77,6 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Added by ProtonUp-Qt on 15-11-2022 20:24:57
+if [ -d "/home/doodles/stl/prefix" ]; then export PATH="$PATH:/home/doodles/stl/prefix"; fi
+
