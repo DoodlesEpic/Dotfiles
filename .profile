@@ -29,6 +29,8 @@ export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME"/bundle
 export BUNDLE_USER_CACHE="$XDG_CACHE_HOME"/bundle
 export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME"/bundle
+export GEM_HOME="$XDG_DATA_HOME"/gems
+export PATH="$XDG_DATA_HOME/gems/bin:$PATH"
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export ANDROID_HOME="$XDG_DATA_HOME"/android
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
