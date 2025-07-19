@@ -19,8 +19,8 @@ sudo dnf install dnf-plugins-core
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf install brave-browser
-wget https://mega.nz/linux/repo/Fedora_36/x86_64/megasync-Fedora_36.x86_64.rpm
-sudo dnf install megasync-Fedora_36.x86_64.rpm
-rm megasync-Fedora_36.x86_64.rpm -f
+wget https://mega.nz/linux/repo/Fedora_42/x86_64/megasync-Fedora_42.x86_64.rpm
+sudo dnf install "$PWD/megasync-Fedora_42.x86_64.rpm"
+rm "$PWD/megasync-Fedora_42.x86_64.rpm"
 sudo dnf install gnome-shell-extension-dash-to-dock.noarch
 sudo dnf install gnome-shell-extension-appindicator.noarch
