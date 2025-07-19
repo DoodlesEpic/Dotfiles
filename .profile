@@ -54,3 +54,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Dotnet
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+
+# Flutter
+export PATH=$PATH:$HOME/Android/Flutter/bin
