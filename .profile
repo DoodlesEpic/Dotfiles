@@ -33,7 +33,6 @@ export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME"/bundle
 export GEM_HOME="$XDG_DATA_HOME"/gems
 export PATH="$XDG_DATA_HOME/gems/bin:$PATH"
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
-export ANDROID_HOME="$XDG_DATA_HOME"/android
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export ZDOTDIR=$HOME/.config/zsh
