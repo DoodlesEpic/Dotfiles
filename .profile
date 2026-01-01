@@ -57,3 +57,6 @@ export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
 # Flutter
 export PATH=$PATH:$HOME/Android/Flutter/bin
+
+# GNU Parallel
+export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel                          
