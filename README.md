@@ -10,6 +10,7 @@ This repository is a guide and a collection of scripts with stuff I like to do o
 By running these scripts, you will get a system with zsh and oh-my-zsh with very useful plugins and sane defaults.
 You will also have a lot of environment variables that will make sure your home folder (mostly) follows the XDG specification.
 Also, a few environment variables that will make, so applications prefer using Wayland over XWayland (this includes Qt, GTK and Java applications and Firefox).
+By default, the script also installs NVidia drivers. Make sure to remove it from the script before running if you're also running AMD or Intel GPUs like I do.
 
 And to top it off: all of your shell environment variables will be on POSIX-compliant .profile, which means it gets to be sourced by bash and zsh without duplicating the environment variables. Other environment variables are stored using Freedesktop's [environment.d](https://www.freedesktop.org/software/systemd/man/environment.d.html) so that they [are loaded by the desktop environment](https://wiki.archlinux.org/title/environment_variables#Wayland_environment).
 
