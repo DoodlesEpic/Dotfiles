@@ -25,9 +25,9 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Mega Sync
-wget https://mega.nz/linux/repo/Fedora_42/x86_64/megasync-Fedora_42.x86_64.rpm
-sudo dnf install "$PWD/megasync-Fedora_42.x86_64.rpm"
-rm "$PWD/megasync-Fedora_42.x86_64.rpm"
+wget https://mega.nz/linux/repo/Fedora_43/x86_64/megasync-Fedora_43.x86_64.rpm
+sudo dnf install "$PWD/megasync-Fedora_43.x86_64.rpm"
+rm "$PWD/megasync-Fedora_43.x86_64.rpm"
 
 # Extensions
 sudo dnf install gnome-shell-extension-dash-to-dock.noarch
