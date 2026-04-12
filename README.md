@@ -113,13 +113,13 @@ touch $XDG_STATE_HOME/zsh/history
 - Download the [xdg-ninja script](https://github.com/b3nj5m1n/xdg-ninja)
 - Set up sync with mega-sync
 ```bash
-wget https://mega.nz/linux/repo/Fedora_42/x86_64/megasync-Fedora_42.x86_64.rpm
+wget https://mega.nz/linux/repo/Fedora_42/x86_64/megasync-Fedora_43.x86_64.rpm
 ```
 ```bash
-sudo dnf install megasync-Fedora_42.x86_64.rpm
+sudo dnf install megasync-Fedora_43.x86_64.rpm
 ```
 ```bash
-rm megasync-Fedora_42.x86_64.rpm -f
+rm megasync-Fedora_43.x86_64.rpm -f
 ```
 
 ### Making GNOME usable
