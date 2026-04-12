@@ -15,10 +15,6 @@ ZSH="~/.config/zsh/oh-my-zsh" sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-autosuggestions 
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-history-substring-search
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-sudo dnf install dnf-plugins-core
-sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
-sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-sudo dnf install brave-browser
 wget https://mega.nz/linux/repo/Fedora_42/x86_64/megasync-Fedora_42.x86_64.rpm
 sudo dnf install "$PWD/megasync-Fedora_42.x86_64.rpm"
 rm "$PWD/megasync-Fedora_42.x86_64.rpm"
