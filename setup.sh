@@ -1,22 +1,34 @@
 #!/bin/sh
 
 sudo dnf update -y # reboot if you are not on the latest kernel
+
+# Repositories
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf groupupdate core
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Codecs from rpmfusion
 sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 sudo dnf groupupdate sound-and-video
 sudo dnf update -y # and reboot if you are not on the latest kernel
+
+# NVidia drivers
 sudo dnf install akmod-nvidia # rhel/centos users can use kmod-nvidia instead
 sudo dnf install xorg-x11-drv-nvidia-cuda #optional for cuda/nvdec/nvenc support
+
+# ZSH and oh-my-zsh
 sudo dnf install zsh
 chsh -s $(which zsh)
 ZSH="~/.config/zsh/oh-my-zsh" sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-autosuggestions 
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-history-substring-search
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.config/zsh/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# Mega Sync
 wget https://mega.nz/linux/repo/Fedora_42/x86_64/megasync-Fedora_42.x86_64.rpm
 sudo dnf install "$PWD/megasync-Fedora_42.x86_64.rpm"
 rm "$PWD/megasync-Fedora_42.x86_64.rpm"
+
+# Extensions
 sudo dnf install gnome-shell-extension-dash-to-dock.noarch
 sudo dnf install gnome-shell-extension-appindicator.noarch
