@@ -59,3 +59,9 @@ export PATH=$PATH:$HOME/Android/Flutter/bin
 
 # GNU Parallel
 export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel                          
+
+# Default STM32CubeMX path
+export STM32CubeMX_PATH=/home/doodles/STM32CubeMX
+
+# Use Ninja instead of makefiles in CMake
+export CMAKE_GENERATOR="Ninja"
