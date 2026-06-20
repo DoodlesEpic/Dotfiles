@@ -132,24 +132,23 @@ sudo dnf install gnome-shell-extension-dash-to-dock.noarch
 ```bash
 sudo dnf install gnome-shell-extension-appindicator.noarch
 ```
+- Grab gnome-shell-extension-blur-my-shell through dnf
+```bash
+sudo dnf install gnome-shell-extension-blur-my-shell.noarch
+```
 
 #### GNOME extensions
 
-- Grab both the GNOME extensions and GNOME tweaks through GNOME software
-- Open GNOME extensions and use it to enable both app indicator and dash to dock
+- Grab both the GNOME extensions (or Extension Manager by Matthew Jakeman) and GNOME tweaks through GNOME software
+- Open GNOME extensions and use it to enable app indicator support, dash to dock and blur my shell
 - Make sure to use magic autohide and system theme on dash to dock so that it doesn't look awful
+- Set up blur-my-shell to stop conflicting with dash to dock
 
 #### GNOME tweaks
 
 - Use GNOME tweaks to set the mouse acceleration profile to flat.
 - Use GNOME tweaks to add megasync to startup applications
 - Use GNOME tweaks to center new windows
-- Optionally also set mouse right click to maximize windows horizontally (doesn't work with everything well)
-
-#### The other extensions software
-
-- Use it to grab blur-my-shell
-- Set up blur-my-shell to stop conflicting with dash to dock
 
 #### Pop shell tilling
 
