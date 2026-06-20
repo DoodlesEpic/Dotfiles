@@ -3,8 +3,7 @@
 This repository is a guide and a collection of scripts with stuff I like to do on my systems to have them easy to use, fast, secure, and most of all: consistent. It also of course includes my dot files, as the names suggests. You might be interested in this if you like Fedora, Wayland, Freedesktop and zsh.
 
 <img width="1186" height="625" alt="My system's neofetch" src="https://github.com/user-attachments/assets/5dad2014-d7f7-416f-97b7-445580b8cb01" />
-
-![Screenshot](https://user-images.githubusercontent.com/37254797/181867608-4cac8ba0-bff9-4ceb-8022-ffd5454847d2.png)
+<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/6d167f57-122b-4106-b17d-49c10efbc298" />
 
 ## What this is
 
