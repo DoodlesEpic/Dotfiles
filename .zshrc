@@ -35,7 +35,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting cabal colored-man-pages dnf git-auto-fetch heroku node npm nvm pip pipenv python rsync rust safe-paste systemadmin systemd vscode yum fzf)
+plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting cabal colored-man-pages dnf git-auto-fetch heroku node npm pip pipenv python rsync rust safe-paste systemadmin systemd vscode yum fzf mise)
 
 # Additional completion definitions for Zsh
 # Adding it as a regular Oh My ZSH! plugin will not work properly
@@ -72,11 +72,10 @@ export HISTFILE="$XDG_STATE_HOME"/zsh/history
 # The next line updates PATH for Netlify's Git Credential Helper.
 test -f '/home/doodles/.config/netlify/helper/path.zsh.inc' && source '/home/doodles/.config/netlify/helper/path.zsh.inc'
 
-# Node Version Manager
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Added by ProtonUp-Qt on 15-11-2022 20:24:57
 if [ -d "/home/doodles/stl/prefix" ]; then export PATH="$PATH:/home/doodles/stl/prefix"; fi
 
+# Setup mise for zsh
+if command -v mise >/dev/null 2>&1; then
+  eval "$(mise activate zsh)"
+fi
