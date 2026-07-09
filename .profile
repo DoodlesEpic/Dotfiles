@@ -15,7 +15,7 @@ export XDG_CACHE_HOME=$HOME/.cache
 . "$HOME/.local/share/cargo/env"
 . "$XDG_DATA_HOME/cargo/env"
 
-# Alias for wget, vim and yarn since there's no env var for these to use xdg
+# Alias for wget and vim since there's no env var for these to use xdg
 alias wget="wget --hsts-file='$XDG_DATA_HOME/wget-hsts'"
 alias vim="vim -i ~/.cache/vim/info"
 
@@ -30,8 +30,6 @@ export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME"/bundle
 export BUNDLE_USER_CACHE="$XDG_CACHE_HOME"/bundle
 export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME"/bundle
-export GEM_HOME="$XDG_DATA_HOME"/gems
-export PATH="$XDG_DATA_HOME/gems/bin:$PATH"
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
