@@ -15,7 +15,7 @@ export XDG_CACHE_HOME=$HOME/.cache
 . "$HOME/.local/share/cargo/env"
 . "$XDG_DATA_HOME/cargo/env"
 
-# Alias for wget and vim since there's no env var for these to use xdg
+# Alias for wget, vim and yarn since there's no env var for these to use xdg
 alias wget="wget --hsts-file='$XDG_DATA_HOME/wget-hsts'"
 alias vim="vim -i ~/.cache/vim/info"
 
@@ -58,6 +58,10 @@ export PATH=$PATH:$HOME/Android/Flutter/bin
 
 # GNU Parallel
 export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel                          
+
+# AI Agents
+export CLAUDE_CONFIG_DIR="$XDG_CONFIG_HOME"/claude
+export CODEX_HOME="$XDG_CONFIG_HOME"/codex
 
 # Default STM32CubeMX path
 export STM32CubeMX_PATH=/home/doodles/STM32CubeMX
