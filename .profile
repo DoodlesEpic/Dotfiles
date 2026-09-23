@@ -63,6 +63,9 @@ export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
 export CLAUDE_CONFIG_DIR="$XDG_CONFIG_HOME"/claude
 export CODEX_HOME="$XDG_CONFIG_HOME"/codex
 
+# CPython
+export PYTHON_HISTORY="$XDG_STATE_HOME"/python_history
+
 # Default STM32CubeMX path
 export STM32CubeMX_PATH=/home/doodles/STM32CubeMX
 
