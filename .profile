@@ -51,6 +51,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Dotnet
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export DOTNET_CLI_HOME="$XDG_DATA_HOME"/dotnet
 
 # Flutter
 export PATH=$PATH:$HOME/Android/Flutter/bin
@@ -63,3 +64,4 @@ export STM32CubeMX_PATH=/home/doodles/STM32CubeMX
 
 # Use Ninja instead of makefiles in CMake
 export CMAKE_GENERATOR="Ninja"
+
